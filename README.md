@@ -17,13 +17,23 @@
 
 
 ### Задание 2
-#### •	Запустите три simple python сервера на своей виртуальной машине на разных портах
-![Скрин6](https://github.com/denniskostyuk/balans/blob/main/task_21.png)
-![Скрин7](https://github.com/denniskostyuk/balans/blob/main/task_22.png)
-![Скрин8](https://github.com/denniskostyuk/balans/blob/main/task_23.png)
-#### •	Настройте балансировку Weighted Round Robin на 7 уровне, чтобы первый сервер имел вес 2, второй - 3, а третий - 4
-#### •	HAproxy должен балансировать только тот http-трафик, который адресован домену example.local
-#### •	На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy c использованием домена example.local и без него.
-![Скрин9](https://github.com/denniskostyuk/balans/blob/main/task_24.png)
-![Скрин10](https://github.com/denniskostyuk/balans/blob/main/task_25.png)
-![Скрин11](https://github.com/denniskostyuk/balans/blob/main/task_26.png)
+#### •	Написать скрипт и настроить задачу на регулярное резервное копирование домашней директории пользователя с помощью rsync и cron.
+#### •	Резервная копия должна быть полностью зеркальной
+#### •	Резервная копия должна создаваться раз в день, в системном логе должна появляться запись об успешном или неуспешном выполнении операции
+#### •	Резервная копия размещается локально, в директории /tmp/backup
+#### •	На проверку направить файл crontab и скриншот с результатом работы утилиты.
+
+Bash-скрипт:
+![Скрин4](https://github.com/denniskostyuk/rsync/blob/main/task_21.png)
+
+crontab (запуск скрипта каждые сутки в 0 часов 0 минут):
+![Скрин5](https://github.com/denniskostyuk/rsync/blob/main/task_22.png)
+
+Результат - записи в syslog:
+![Скрин6](https://github.com/denniskostyuk/rsync/blob/main/task_23.png)
+
+Исходное состояние домашней директории:
+![Скрин7](https://github.com/denniskostyuk/rsync/blob/main/task_24.png)
+
+Результат - cостояние целевой директории:
+![Скрин8](https://github.com/denniskostyuk/rsync/blob/main/task_25.png)

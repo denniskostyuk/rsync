@@ -7,13 +7,13 @@
 #### •	На проверку направить скриншот с командой и результатом ее выполнения
 
 Исходное состояние домашней директории:
-![Скрин1](https://github.com/denniskostyuk/rsynk/blob/main/task_11.png)
+![Скрин1](https://github.com/denniskostyuk/rsync/blob/main/task_11.png)
 
 Делаем копирование:
-![Скрин2](https://github.com/denniskostyuk/rsynk/blob/main/task_12.png)
+![Скрин2](https://github.com/denniskostyuk/rsync/blob/main/task_12.png)
    
 Состояние целевой директории (с бэкапом):
-![Скрин3](https://github.com/denniskostyuk/rsynk/blob/main/task_13.png)
+![Скрин3](https://github.com/denniskostyuk/rsync/blob/main/task_13.png)
 
 
 ### Задание 2
